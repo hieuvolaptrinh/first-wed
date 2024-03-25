@@ -1,0 +1,348 @@
+<!-- 
+    @ phân tích wedsite
+    1.header
+    2.navigation: thanh điều hướng
+    3.breadcrumb: chỉ cho mình biết phần nào ở trong wed ví dụ (khóa học -> html,css)
+    4.sidebar: thanh đặt 1 phía màn hình( như cái menu)
+    5.slider( mấy cái hình trượt trược đầu trang)
+    6.footer(chân trang)
+    7.content:(giữa trang là nội dung của trang)
+trang wed bây giờ làm gồm :
+
+
+1.phân tích https://www.w3schools.com/w3css/tryw3css_templates_band.htm
+    1.header
+    2.slider
+    3.content
+        1. about
+        2 tour
+        3. contact
+        4. image
+        5. foooter
+    4.footer
+2.. dựng base ( xây móng)
+3. xây dựng theo phần phân tích
+4. hoàn thiện        
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>band nhạc</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- <link rel="icon" href="./assets/img/Logo_Đại_học_Sư_phạm_Kỹ_thuật_Đà_Nẵng.png"> -->
+    <!-- hoặc thêm icon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/Logo_Đại_học_Sư_phạm_Kỹ_thuật_Đà_Nẵng.png"
+      type="image/x-icon"
+    />
+
+    <!-- JAVASCRPIT để làm cái nút mua vé -->
+    <script src="assets/js.js"></script>
+
+    <!-- link cái thư viện lấy iocn vào -->
+    <link rel="stylesheet" href="assets/img/themify-icons/themify-icons.css" />
+  </head>
+  <body>
+    <div id="main">
+      <!-- tạo lớp bao quanh hết wedsite -->
+      <!-- ctrl + shift + L chon -->
+      <!-- sau đó nhấn muỗi tên bên phải rồi alt+shift rồi copy hết các id  -->
+
+      <div id="header">
+        <div>
+          <marquee id="tieude" direction="">
+            hãy học để biết bản thân từng cố gắng đến chừng nào</marquee
+          >
+        </div>
+        <ul id="nap">
+          <!-- begin: vap -->
+          <li><a href="" #>Home</a></li>
+          <li><a href="#SLOGAN">SLOGAN</a></li>
+          <li><a href="#TOUR">Tour</a></li>
+          <li><a href="#CONTACT">Contact</a></li>
+          <li>
+            <a href="">
+              More
+              <!-- <img src="" alt="" class="ti-angle-down"> -->
+              <!-- hoặc thẻ i cũng được -->
+              <i class="icon_muiten ti-angle-down"></i>
+            </a>
+            <ul class="subnav">
+              <li><a href=""> Merchandise</a></li>
+              <li><a href="">Extras</a></li>
+              <li><a href="">Media</a></li>
+            </ul>
+          </li>
+          <!-- end:nap -->
+        </ul>
+
+        <div class="search-button">
+          <!-- biểu tượng tìm kiếm bằng themfyi icon -->
+          <i class="timkiem ti-search"></i>
+        </div>
+      </div>
+
+      <div id="slider">
+        <div class="text-content">
+          <h2 class="text-heading">HEADER : Việt Nam</h2>
+          <p class="text-description">description: miêu tả</p>
+        </div>
+      </div>
+
+      <div id="content">
+        <marquee behavior="" direction=""> chữ chạy qua lại</marquee>
+
+        <!-- phần slogan-->
+        <div id="SLOGAN" class="content-section">
+          <h2 class="section-heading SLOGAN">SLOGAN</h2>
+          <p class="section-sub-heading">
+            không gì là không thể : nothings is imimpossible
+          </p>
+          <p class="about-text">
+            Bóng ai đó nhẹ nhàng vụt qua nơi đây Quyến rũ ngây ngất loạn nhịp
+            làm tim mê say Cuốn lấy áng mây theo cơn sóng xô dập dìu Nụ cười
+            ngọt ngào cho ta tan vào phút giây miên man quên hết con đường về eh
+            Chẳng thể tìm thấy lối về ehhhhh Điệu nhạc hòa quyện trong ánh mắt
+            đôi môi Dẫn lối những bối rối rung động khẽ lên ngôi Chạm nhau mang
+            vô vàn Đắm đuối vấn vương dâng tràn Lấp kín chốn nhân gian Làn gió
+            hoá sắc hương mơ màng Một giây ngang qua đời Cất tiếng nói không nên
+            lời Ấm áp đến trao tay ngàn sao trời lòng càng thêm chơi vơi Dịu êm
+            không gian bừng sáng đánh thức muôn hoa mừng Quấn quít hát ngân nga
+            từng chút níu bước chân em dừng Bao ý thơ tương tư ngẩn ngơ Lưu dấu
+            nơi mê cung đẹp thẫn thờ
+          </p>
+          <div class="member-list">
+            <div class="member-item">
+              <p class="ten">ảnh 1</p>
+              <img
+                class="img"
+                src="assets/img/images (1).jpeg"
+                alt="ảnh hôm kia"
+              />
+            </div>
+
+            <div class="member-item">
+              <p class="ten">ảnh 2</p>
+              <img
+                class="img"
+                src="assets/img/images (1).jpeg"
+                alt="ảnh hôm kia"
+              />
+            </div>
+
+            <div class="member-item">
+              <p class="ten">ảnh 2</p>
+              <img
+                class="img"
+                src="assets/img/images (1).jpeg"
+                alt="ảnh hôm kia"
+              />
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+
+        <!-- tour section -->
+        <div class="nen_den">
+          <div id="TOUR" class="content-section">
+            <h2 class="section-heading text-white">TOUR</h2>
+            <p class="section-sub-heading">
+              không gì là không thể : nothings is imimpossible
+            </p>
+            <ol type="none" class="ticket">
+              <li>September <span class="hetve">HẾT VÉ</span></li>
+              <li>Octorber <span class="hetve">HẾT VÉ</span></li>
+              <li>November <span class="conve">7 vé</span></li>
+            </ol>
+
+            <!-- 3 thẻ hình ảnh -->
+            <div class="row place-list">
+              <div class="col place-items">
+                <img
+                  src="assets/img/newyork.jpg"
+                  alt="new york"
+                  class="place-img"
+                />
+                <div class="place-body">
+                  <h3 class="place-heading">NEW YORK</h3>
+                  <p class="place-time">Fr 29 Nov 2022</p>
+                  <p class="place-description">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <button class="btn js-buy-ticket">BUY TICKETS</button>
+                </div>
+              </div>
+
+              <div class="col place-items">
+                <img
+                  src="assets/img/newyork.jpg"
+                  alt="pari"
+                  class="place-img"
+                />
+                <div class="place-body">
+                  <h3 class="place-heading">PARIS</h3>
+                  <p class="place-time">Mon 22 Dec 2023</p>
+                  <p class="place-description">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <button class="btn js-buy-ticket">BUY TICKETS</button>
+                </div>
+              </div>
+
+              <div class="col place-items">
+                <img
+                  src="assets/img/sanfran.jpg"
+                  alt="new york"
+                  class="place-img"
+                />
+                <div class="place-body">
+                  <h3 class="place-heading">San Francisco</h3>
+                  <p class="place-time">Sun 29 Jun 2016</p>
+                  <p class="place-description">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <button class="btn js-buy-ticket">BUY TICKETS</button>
+                </div>
+              </div>
+            </div>
+
+            <!--để cái place-list nó ôm hết cả cái thẻ div trong nó  -->
+            <div class="clear"></div>
+          </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div id="CONTACT" class="content-section">
+          <h2 class="section-heading">CONTACT</h2>
+          <p class="section-sub-heading">GỌI CHO TÔI</p>
+
+          <div class="row contact-content">
+            <div class="col col-hafl contact-infor">
+              <p>
+                <i class="ti-location-pin"> ĐAK ĐOA - GIA LAI</i>
+              </p>
+              <p>
+                <i class="ti-mobile"> PHONE: 0911735883</i>
+              </p>
+              <p>
+                <i class="ti-email"> MAIL: hieuddzzz@@@@@@@@</i>
+              </p>
+            </div>
+            <div class="col col-hafl contact-form">
+              <form action="">
+                <div class="row">
+                  <div class="col col-haft">
+                    <input
+                      type="text"
+                      placeholder="tên của bạn"
+                      required
+                      name=""
+                      id=""
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col col-haft">
+                    <input
+                      type="email"
+                      placeholder="điền mail"
+                      required
+                      name=""
+                      id=""
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-full mr-8">
+                    <input
+                      type="text"
+                      placeholder="message"
+                      required
+                      name=""
+                      id=""
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <input class="btn mr-20 pull-right" type="submit" value="Gửi" />
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- end CONTACT -->
+
+        <div class="content-section"></div>
+      </div>
+    </div>
+
+    <!-- BANG MUA VE -->
+    <div class="modal">
+      <div class="modal-contain">
+        <!-- nút close -->
+        <div class="modal-close">
+          <!-- lấy biểu tượng dấu tick từ thư viện css -->
+          <i class="ti-close"></i>
+        </div>
+
+        <header class="modal-header">
+          <i class="ti-bag"></i>
+          TICKETS
+        </header>
+
+        <div class="modal-body">
+          <!-- nhãn dòng 1  -->
+          <label for="nhanvao" class="modal-label">
+            <!-- for nhanvao ta đặt id của input vào trong để khi nhấn ra ngoài nó tự vào ô -->
+            <i class="ti-shopping-cart"></i>
+            TICKETS 20.000vnd
+          </label>
+          <input
+            id="nhanvao"
+            type="text"
+            class="modal-input"
+            placeholder="Bao Nhiêu Vé ?"
+          />
+
+          <!-- nhãn dòng 2 -->
+          <label for="nhanvaomail" class="modal-label">
+            <i class="ti-user"></i>
+            ĐỊA CHỈ
+          </label>
+          <input
+            id="nhanvaomail"
+            type="mail"
+            class="modal-input"
+            placeholder="Email  ?"
+          />
+          <button type="button" class="button">
+            PAY<i class="ti-check"></i>
+          </button>
+        </div>
+        <footer class="modal-footer">
+          <p class="modal-help">Need <a href="">Help ?</a></p>
+        </footer>
+      </div>
+    </div>
+    <!-- end BANG MUA VE -->
+
+    <!-- mapp -->
+    <div class="map-section">
+      <img class="map" src="assets/img/map.jpg" alt="" />
+    </div>
+
+    <div id="footer">
+      <div class="mangxh">
+        <a href=""><i class="ti-facebook"></i></a>
+        <a href=""><i class="ti-instagram"></i></a>
+        <a href=""><i class="ti-youtube"></i></a>
+        <a href=""><i class="ti-pinterest"></i></a>
+        <a href=""><i class="ti-twitter"></i></a>
+        <a href=""><i class="ti-linkedin"></i></a>
+      </div>
+      <p class="nguon">HIẾU VÕ NGUYỄN ĐẠI <a href=""></a></p>
+    </div>
+  </body>
+</html>
