@@ -1,0 +1,44 @@
+/* pc */
+@media (min-width: 1024px) {
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023) {
+  #header .mobile-menu-btn {
+    display: none;
+  }
+}
+/* điện thoại */
+@media (max-width: 739px) {
+  #header {
+    overflow: hidden;
+  }
+  #nav .subnav {
+    position: initial;
+  }
+
+  #nap li:first-child {
+    display: inline-block;
+  }
+  #nap > li {
+    display: block;
+  }
+  #header .mobile-menu-btn {
+    display: block;
+  }
+  header .search-button {
+    display: none;
+  }
+  #nap {
+    display: block;
+  }
+  #content .member-item {
+    margin-top: 30px;
+    width: 100%;
+  }
+  #content .member-img {
+    width: 60%;
+  }
+  .s-col-full {
+    width: 100%;
+  }
+}

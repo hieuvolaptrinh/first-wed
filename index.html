@@ -31,6 +31,9 @@ trang wed bây giờ làm gồm :
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>band nhạc</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- nhớ viết responsive ở phía dưới -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
     <!-- <link rel="icon" href="./assets/img/Logo_Đại_học_Sư_phạm_Kỹ_thuật_Đà_Nẵng.png"> -->
     <!-- hoặc thêm icon -->
     <link
@@ -39,32 +42,31 @@ trang wed bây giờ làm gồm :
       type="image/x-icon"
     />
 
-    <!-- JAVASCRPIT để làm cái nút mua vé -->
-    <script src="assets/js.js"></script>
+    <!-- JAVASCRPIT -->
 
     <!-- link cái thư viện lấy iocn vào -->
     <link rel="stylesheet" href="assets/img/themify-icons/themify-icons.css" />
   </head>
   <body>
-    <div id="main">
+    <main id="main">
       <!-- tạo lớp bao quanh hết wedsite -->
       <!-- ctrl + shift + L chon -->
       <!-- sau đó nhấn muỗi tên bên phải rồi alt+shift rồi copy hết các id  -->
 
-      <div id="header">
+      <header id="header">
         <div>
-          <marquee id="tieude" direction="">
+          <!-- <marquee id="tieude" direction="">
             hãy học để biết bản thân từng cố gắng đến chừng nào</marquee
-          >
+          > -->
         </div>
         <ul id="nap">
-          <!-- begin: vap -->
-          <li><a href="" #>Home</a></li>
+          <!-- begin: nap -->
+          <li><a href="#">Home</a></li>
           <li><a href="#SLOGAN">SLOGAN</a></li>
           <li><a href="#TOUR">Tour</a></li>
           <li><a href="#CONTACT">Contact</a></li>
           <li>
-            <a href="">
+            <a href="#">
               More
               <!-- <img src="" alt="" class="ti-angle-down"> -->
               <!-- hoặc thẻ i cũng được -->
@@ -83,7 +85,10 @@ trang wed bây giờ làm gồm :
           <!-- biểu tượng tìm kiếm bằng themfyi icon -->
           <i class="timkiem ti-search"></i>
         </div>
-      </div>
+        <div id="mobile-menu" class="mobile-menu-btn">
+          <i class="ti-menu"></i>
+        </div>
+      </header>
 
       <div id="slider">
         <div class="text-content">
@@ -115,28 +120,28 @@ trang wed bây giờ làm gồm :
             nơi mê cung đẹp thẫn thờ
           </p>
           <div class="member-list">
-            <div class="member-item">
+            <div class="s-col-full member-item">
               <p class="ten">ảnh 1</p>
               <img
-                class="img"
+                class="member-img"
                 src="assets/img/images (1).jpeg"
                 alt="ảnh hôm kia"
               />
             </div>
 
-            <div class="member-item">
+            <div class="s-col-full member-item">
               <p class="ten">ảnh 2</p>
               <img
-                class="img"
+                class="member-img"
                 src="assets/img/images (1).jpeg"
                 alt="ảnh hôm kia"
               />
             </div>
 
-            <div class="member-item">
+            <div class="s-col-full member-item">
               <p class="ten">ảnh 2</p>
               <img
-                class="img"
+                class="member-img"
                 src="assets/img/images (1).jpeg"
                 alt="ảnh hôm kia"
               />
@@ -160,7 +165,7 @@ trang wed bây giờ làm gồm :
 
             <!-- 3 thẻ hình ảnh -->
             <div class="row place-list">
-              <div class="col place-items">
+              <div class="s-col-full col place-items">
                 <img
                   src="assets/img/newyork.jpg"
                   alt="new york"
@@ -172,11 +177,13 @@ trang wed bây giờ làm gồm :
                   <p class="place-description">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="btn js-buy-ticket">BUY TICKETS</button>
+                  <button class="btn s-full-width js-buy-ticket">
+                    BUY TICKETS
+                  </button>
                 </div>
               </div>
 
-              <div class="col place-items">
+              <div class="s-col-full col place-items">
                 <img
                   src="assets/img/newyork.jpg"
                   alt="pari"
@@ -188,11 +195,13 @@ trang wed bây giờ làm gồm :
                   <p class="place-description">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="btn js-buy-ticket">BUY TICKETS</button>
+                  <button class="btn s-full-width js-buy-ticket">
+                    BUY TICKETS
+                  </button>
                 </div>
               </div>
 
-              <div class="col place-items">
+              <div class="s-col-full col place-items">
                 <img
                   src="assets/img/sanfran.jpg"
                   alt="new york"
@@ -204,7 +213,9 @@ trang wed bây giờ làm gồm :
                   <p class="place-description">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="btn js-buy-ticket">BUY TICKETS</button>
+                  <button class="btn s-full-width js-buy-ticket">
+                    BUY TICKETS
+                  </button>
                 </div>
               </div>
             </div>
@@ -276,13 +287,13 @@ trang wed bây giờ làm gồm :
 
         <div class="content-section"></div>
       </div>
-    </div>
+    </main>
 
     <!-- BANG MUA VE -->
-    <div class="modal">
-      <div class="modal-contain">
+    <div class="modal js-modal">
+      <div class="modal-container  js-modal-container   ">
         <!-- nút close -->
-        <div class="modal-close">
+        <div class="modal-close js-modal-close">
           <!-- lấy biểu tượng dấu tick từ thư viện css -->
           <i class="ti-close"></i>
         </div>
@@ -344,5 +355,7 @@ trang wed bây giờ làm gồm :
       </div>
       <p class="nguon">HIẾU VÕ NGUYỄN ĐẠI <a href=""></a></p>
     </div>
+    <!-- phần js -->
+    <script src="assets/main.js"></script>
   </body>
 </html>
